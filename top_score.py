@@ -19,22 +19,24 @@ def turn_right():
     tracker -=1
     print('turning right')
 
+
+def sing(num_bottles):
+    #TODO: Add your code to achieve the desired output and pass the challenge. 
+    #NOTE: The f String method of String Interpolation does not work. 
+    list=[]
+    for i in range(num_bottles,0,-1):
+        list.append('{i} bottles of beer on the wall {i} bottles of beer.'.format(i=i))
+        list.append('Take one down and pass it around {i} bottles on the wall.'.format(i=i-1))
+        list.append('')
+    print(list)
+
+
+sing(99)
+
+
 def square_root(x):
     return math.sqrt(x)
-def move():
-    move_forward()
-    turn_right()
-    turn_right()
-    turn_right()
-    turn_right()
-    turn_right()
-    turn_right()
-    move_forward()
-    turn_right()
-    move_forward()
-    return tracker
 
-print(move())
 
 nums = [43,12,6,78,14]
 chars = ['a','t,','k']
